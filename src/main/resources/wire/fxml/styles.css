@@ -1,0 +1,51 @@
+.root {
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Background gradient — the original referenced images/background.jpg, which
+   was never included in the project, so every screen would have loaded with
+   a broken image at runtime. A CSS gradient needs no external asset. */
+.app-background {
+    -fx-background-color: linear-gradient(to bottom right, #1f6f4a, #2E8B57, #3CB371);
+}
+
+.card {
+    -fx-background-color: rgba(255, 255, 255, 0.95);
+    -fx-background-radius: 20;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 15, 0, 0, 4);
+}
+
+.title-label {
+    -fx-text-fill: #1f6f4a;
+    -fx-font-weight: bold;
+}
+
+.subtitle-label {
+    -fx-text-fill: #2E8B57;
+}
+
+.text-field, .password-field {
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: #cfd8dc;
+    -fx-border-width: 1;
+    -fx-padding: 8;
+}
+
+.app-button {
+    -fx-background-color: #2E8B57;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 15;
+    -fx-cursor: hand;
+}
+
+.app-button:hover {
+    -fx-background-color: #3CB371;
+    -fx-effect: dropshadow(gaussian, rgba(46, 139, 87, 0.6), 10, 0, 0, 0);
+}
+
+.report-area {
+    -fx-font-family: "Consolas", "Monospaced";
+    -fx-font-size: 12;
+}

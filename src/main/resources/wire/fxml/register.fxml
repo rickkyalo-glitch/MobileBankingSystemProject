@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+
+<Pane prefHeight="600.0" prefWidth="800.0" styleClass="app-background" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wire.RegisterController">
+   <children>
+      <VBox alignment="CENTER" spacing="15.0" styleClass="card" layoutX="200.0" layoutY="50.0" prefHeight="500.0" prefWidth="400.0">
+         <padding>
+            <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+         </padding>
+         <children>
+            <Label text="Register for Wire" styleClass="title-label">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+
+            <TextField fx:id="nameField" promptText="Full Name" />
+            <TextField fx:id="idNumberField" promptText="ID Number" />
+            <TextField fx:id="phoneField" promptText="Phone Number" />
+            <PasswordField fx:id="pinField" promptText="PIN" />
+            <PasswordField fx:id="confirmPinField" promptText="Confirm PIN" />
+
+            <Button fx:id="registerBtn" mnemonicParsing="false" onAction="#handleRegister" prefHeight="40.0" prefWidth="200.0" text="Register" styleClass="app-button" />
+            <Button fx:id="backBtn" mnemonicParsing="false" onAction="#handleBack" prefHeight="40.0" prefWidth="200.0" text="Back to Login" styleClass="app-button" />
+         </children>
+      </VBox>
+   </children>
+</Pane>

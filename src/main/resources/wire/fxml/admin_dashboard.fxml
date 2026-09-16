@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+
+<Pane prefHeight="600.0" prefWidth="800.0" styleClass="app-background" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wire.AdminDashboardController">
+   <children>
+      <VBox alignment="TOP_CENTER" spacing="15.0" styleClass="card" layoutX="50.0" layoutY="50.0" prefHeight="500.0" prefWidth="700.0">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <children>
+            <Label text="Wire Admin Dashboard" styleClass="title-label">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+
+            <HBox alignment="CENTER" spacing="15.0">
+               <children>
+                  <Button fx:id="viewIncomeBtn" mnemonicParsing="false" onAction="#handleViewIncome" prefHeight="40.0" prefWidth="150.0" text="View Income" styleClass="app-button" />
+                  <Button fx:id="registerUserBtn" mnemonicParsing="false" onAction="#handleRegisterUser" prefHeight="40.0" prefWidth="150.0" text="Register User" styleClass="app-button" />
+                  <Button fx:id="viewUsersBtn" mnemonicParsing="false" onAction="#handleViewUsers" prefHeight="40.0" prefWidth="150.0" text="View Users" styleClass="app-button" />
+                  <Button fx:id="viewTransactionsBtn" mnemonicParsing="false" onAction="#handleViewTransactions" prefHeight="40.0" prefWidth="150.0" text="View Transactions" styleClass="app-button" />
+               </children>
+            </HBox>
+
+            <TextArea fx:id="reportArea" prefHeight="350.0" prefWidth="650.0" styleClass="report-area" />
+
+            <Button fx:id="logoutBtn" mnemonicParsing="false" onAction="#handleLogout" prefHeight="40.0" prefWidth="150.0" text="Logout" styleClass="app-button" />
+         </children>
+      </VBox>
+   </children>
+</Pane>

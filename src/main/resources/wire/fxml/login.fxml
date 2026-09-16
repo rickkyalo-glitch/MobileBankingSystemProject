@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+
+<Pane prefHeight="600.0" prefWidth="800.0" styleClass="app-background" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wire.LoginController">
+   <children>
+      <VBox alignment="CENTER" spacing="20.0" styleClass="card" layoutX="200.0" layoutY="100.0" prefHeight="400.0" prefWidth="400.0">
+         <padding>
+            <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+         </padding>
+         <children>
+            <Label text="Wire" styleClass="title-label">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+
+            <Label text="Mobile Money" styleClass="subtitle-label">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+
+            <TextField fx:id="phoneField" promptText="Phone Number" />
+            <PasswordField fx:id="pinField" promptText="PIN" />
+
+            <Button fx:id="loginBtn" mnemonicParsing="false" onAction="#handleLogin" prefHeight="40.0" prefWidth="200.0" text="Login" styleClass="app-button" />
+            <Button fx:id="registerBtn" mnemonicParsing="false" onAction="#handleRegister" prefHeight="40.0" prefWidth="200.0" text="Register" styleClass="app-button" />
+            <Button fx:id="adminLoginBtn" mnemonicParsing="false" onAction="#handleAdminLogin" prefHeight="40.0" prefWidth="200.0" text="Admin Login" styleClass="app-button" />
+         </children>
+      </VBox>
+   </children>
+</Pane>

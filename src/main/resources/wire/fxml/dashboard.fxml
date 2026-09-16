@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+
+<Pane prefHeight="600.0" prefWidth="800.0" styleClass="app-background" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wire.DashboardController">
+   <children>
+      <VBox alignment="TOP_CENTER" spacing="20.0" styleClass="card" layoutX="50.0" layoutY="50.0" prefHeight="500.0" prefWidth="700.0">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <children>
+            <Label fx:id="welcomeLabel" text="Welcome" styleClass="title-label">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+
+            <Label text="Account Balance:" styleClass="subtitle-label" />
+            <Label fx:id="balanceLabel" text="KSh 0.00" styleClass="title-label">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+
+            <GridPane hgap="10" vgap="10">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Button fx:id="depositBtn" mnemonicParsing="false" onAction="#handleDeposit" text="Deposit" styleClass="app-button" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                  <Button fx:id="withdrawBtn" mnemonicParsing="false" onAction="#handleWithdraw" text="Withdraw" styleClass="app-button" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                  <Button fx:id="sendMoneyBtn" mnemonicParsing="false" onAction="#handleSendMoney" text="Send Money" styleClass="app-button" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+                  <Button fx:id="payBillBtn" mnemonicParsing="false" onAction="#handlePayBill" text="Pay Bill" styleClass="app-button" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+                  <Button fx:id="savingsBtn" mnemonicParsing="false" onAction="#handleSavings" text="Savings" styleClass="app-button" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                  <Button fx:id="statementBtn" mnemonicParsing="false" onAction="#handleStatement" text="Statement" styleClass="app-button" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Button fx:id="changePinBtn" mnemonicParsing="false" onAction="#handleChangePin" text="Change PIN" styleClass="app-button" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <Button fx:id="logoutBtn" mnemonicParsing="false" onAction="#handleLogout" text="Logout" styleClass="app-button" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+   </children>
+</Pane>
