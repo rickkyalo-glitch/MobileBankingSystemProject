@@ -80,12 +80,7 @@ number is entered. Also added: can't send money to your own number, PIN
 must be exactly 4 digits (previously only checked length, not that it was
 numeric).
 
-## What I didn't change
 
-The overall design — SQLite file DB, PIN-based auth, ID-number identity
-check for changing your PIN, the fee model (0.1% over KSh 500) — is
-unchanged. Those are product decisions, not bugs, and the brief was to fix
-and polish rather than redesign.
 
 ## Project structure
 
